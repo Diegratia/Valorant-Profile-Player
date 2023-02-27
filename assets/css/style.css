@@ -1,0 +1,243 @@
+@import url(//db.onlinewebfonts.com/c/e7322a6673613ab13604fadda3d20e56?family=VALORANT);
+ /* css scrollup*/
+ 
+
+ /* html {
+   scroll-behavior: smooth;
+ }
+ 
+ @media (prefers-reduced-motion: reduce) {
+   html {
+     scroll-behavior: auto;
+   }
+ } */
+ 
+
+ 
+ .scroll {
+   cursor: pointer;
+   width: 70px;
+   height: 70px;
+   position: fixed;
+   bottom: 40px;
+   right: -80px;
+   border-radius: 100%;
+   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+   color: #fff;
+   font-size: 44px;
+   font-weight: bold;
+   text-align: center;
+   box-shadow: 0 0 5px 0px #888;
+   transition: 300ms;
+ }
+ 
+ .scroll i {
+   margin-top: 10px;
+   text-shadow: 0 0 2px #fff;
+ }
+ 
+ .scroll:hover i {
+   animation-name: rotate;
+   animation-duration: 300ms;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+ }
+ 
+ @keyframes rotate {
+   from {margin-top: 15px}
+   to {margin-top: 5px}
+ }
+ 
+ .visible {
+   right: 30px;
+   transition: all 400ms;
+   transform: rotate(360deg)
+ } 
+/* end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  color: antiquewhite;
+}
+ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FD4556;
+  
+}
+ 
+header {
+  display: inline;
+  font-family: Valorant;
+}
+
+.head-logo {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.head-logo img {
+  width: 100%;
+  object-position: center;
+}
+ 
+nav {
+  top: 0;
+  background-color: #53212B;
+  position: sticky;
+  padding: 3px;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav ul {
+  background-color: #53212B;
+  display: flex;
+}
+
+nav a {
+ 
+  color: aliceblue;
+  background-color: #53212B;
+  padding-left: 230px;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+  color: antiquewhite;
+}
+ 
+main { 
+  padding: 10px;
+  display: flex;
+  gap: 3rem; 
+}
+ 
+footer {
+  color: #fff;
+  Background-color: #53212B;
+  padding: 4px;
+}
+ 
+h2 {
+  color: antiquewhite;
+  font-family: Valorant
+}
+ 
+.home {
+  background-color: #FD4556;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+ 
+.photo {
+  width: 50%;
+  max-height: 50%;
+  border-radius: 40px;
+  object-fit: cover;
+  object-position: right;
+}
+
+h3 {
+  color: antiquewhite;
+}
+ 
+.profile img {
+  width: 200px;
+  border-radius: 10px;
+}
+ .profile li {
+  list-style-type: none;
+ }
+
+.profile{
+  color: #fff;
+}
+ 
+.artic {
+  padding: 34px;
+  border: solid;
+  border-color: antiquewhite;
+  border-radius: 40px;
+  display: inline-block;
+  object-position: right;
+}
+
+.rank img {
+ margin-left: 300px;
+}
+
+.weapon {
+  display: inline-flex;
+}
+
+.weapon img{
+  margin-left: 100px;
+}
+
+.weapon p {
+  padding-left: 2px;
+text-align: center;
+}
+
+.agent{
+  display: inline-flex;
+}
+
+.agent p {
+  padding-left: 2px;
+  text-align: center;
+}
+
+.agent img {
+  margin-left: 100px;
+}
+
+footer p {
+  text-align: center;
+}
+ 
+.icon {
+  margin: auto;
+  padding: auto;
+}
+
+.icon i{
+  margin: 9px;
+}
+
+.icon i:hover{
+  color: black;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+ 
+@media screen and (max-width: 768px) {}
